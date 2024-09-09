@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container {
+        /* border:1px dashed red; */
+        padding: 50px;
+
+
+    }
+
+    .item {
+        /* border:1px solid green; */
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 10px;
+        margin-bottom: 30px;
+
+    }
+
+    .inner-div1 {
+        /* border:1px solid blue; */
+
+        width: 200px;
+    }
+
+    .inner-div2 {
+        /* border: 1px solid rgb(255, 0, 221); */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .inner-div1>img {
+        width: 100%;
+
+    }
+
+    .dummy-img {
+        height: 200px;
+    }
+
+    @media screen and (min-width:300px) and (max-width:700px) {
+        .container {}
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
+
+    nav>ul {
+        display: flex;
+
+        list-style-type: none;
+        justify-content: space-around;
+        padding: 20px;
+        margin-bottom: 30px;
+        background-color: rgba(34, 31, 31, 0.767);
+        color: white
+    }
+
+    nav>h2 {
+        color: aqua;
+        background-color: rgba(34, 31, 31, 0.767);
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+    <div id="container">
+
+        <nav>
+            <h2>My Project</h2>
+            <ul>
+                <li>HOME</li>
+                <li>EDUCATION</li>
+                <li>PROJECTS</li>
+                <li>SKILLS</li>
+                <li>CONTACT ME</li>
+            </ul>
+        </nav>
+
+
+        <div class="item">
+
+            <div class="inner-div1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREFIJDGSy0m5Ot-c3sg46up9SodvdItVAePI6xAXyRO8fGj_GdsP83t90QZg&s"
+                    alt="">
+
+            </div>
+
+            <div class="inner-div2">
+                <h2 style="color:green">HOME</h2>
+                <p>This is a dummy description for the Home section. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit.</p>
+            </div>
+
+        </div>
+
+        <div class="item">
+
+            <div class="inner-div1">
+                <img src="https://img.freepik.com/free-vector/hand-drawn-flat-design-stack-books-illustration_23-2149341898.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1725840000&semt=ais_hybrid"
+                    alt="">
+            </div>
+
+            <div class="inner-div2">
+                <h2 style="color:red">Education</h2>
+                <p>This is a dummy description for the Education section. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.</p>
+            </div>
+
+        </div>
+
+        <div class="item">
+            <div class="inner-div1">
+                <img class="dummy-img"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvE8WLPuEvB6WN5Tfiw7E85blWY-WnR1Q4Kw&s"
+                    alt="">
+            </div>
+
+            <div class="inner-div2">
+                <h2 style="color:#f89500">Project</h2>
+                <p>This is a dummy description for the Projects section. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="inner-div1">
+                <img src="https://media.istockphoto.com/id/1388635225/photo/businessman-click-on-skills.jpg?s=612x612&w=0&k=20&c=lsCABr8nyaj9E2gFnAuo5V0V_JnGz4d43IZVheP7eoo="
+                    alt="">
+            </div>
+
+            <div class="inner-div2">
+                <h2 style="color:blueviolet">Skills</h2>
+                <p>This is a dummy description for the Skills section. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="inner-div1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0f6MHkSKFWR0lAr5yhS2xA970lTDfkEN3Xw&s"
+                    alt="">
+            </div>
+
+            <div class="inner-div2">
+                <h2 style="color:rgb(41, 119, 236)">contact me</h2>
+                <p>This is a dummy description for the Contact Me section. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.</p>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
